@@ -170,13 +170,56 @@ DRILLS = {
             "Keep swings controlled at this age. Soften the entry if pace runs high.",
         ],
     },
+    "AT-05": {
+        "name": "Approach Motor Skills",
+        "setup": "Partners",
+        "ordered": True,
+        "how": [
+            "Step sizing and tempo: small, quiet first step, longer penultimate step to load the jump. "
+            "Slow to fast, never dive into the first step.",
+            "Three-step approach on a 1-2-3-4 count. Left, right-left for righties, hips opening to the ball.",
+            "1: first step. 2: the draw, both arms back then up.",
+            "3: the exchange. The non-hitting arm pulls down to the body as the hitting elbow leads up to the ball.",
+            "4: contact. Wrist snaps over the ball, high finish, no prescribed follow-through.",
+            "Rep the footwork slow first, then add pace. After every swing, return to the middle of the court and "
+            "re-square hips and shoulders.",
+        ],
+        "keys": [
+            "Small first step, big penultimate step. Slow to fast.",
+            "The exchange is the money piece: non-hitting arm down as the hitting elbow leads up.",
+            "Hips open to the ball but don't over-rotate, or you can only hit cross.",
+            "Contact high, snap over the ball, finish high. Standardize the count, the draw, and the exchange, "
+            "and leave each player's other quirks alone.",
+        ],
+    },
+    "OS-04": {
+        "name": "Team OOS",
+        "setup": "Stations, coach entry",
+        "ordered": True,
+        "how": [
+            "Wings only, no middles: a right front and a left front with two wing defenders behind them. "
+            "Two lines behind the defenders, coach on the sideline with a cart.",
+            "Coach hits a hard ball to a back-row defender.",
+            "Whoever digs is not the setter. The other wing defender sets out of system.",
+            "Both wing defenders move forward and become the attackers. All three cover the swing.",
+            "Both front-row hitters shag, then drop back to become the next diggers. Coach enters the next ball "
+            "right away so the rotation never stops.",
+        ],
+        "keys": [
+            "Whoever digs, the other sets. Everyone starts in a defensive slot and shifts up to attack.",
+            "Cover hard on every swing. The rotation depends on bodies moving up as soon as a teammate is setting.",
+            "Talk constantly: call who is setting and who is hitting before the next contact.",
+            "Short live bursts, pace high. Add a single blocker to contest swings once it is running clean.",
+        ],
+    },
 }
 
 # (section label, [drill ids])
 PLAN = [
     ("Warmup", ["OS-10"]),
     ("Track 1: Ball control", ["BC-01", "BC-07", "BC-09", "BC-12"]),
-    ("Track 2: Hitting", ["AT-01"]),
+    ("Track 2: Hitting", ["AT-01", "AT-05"]),
+    ("Out of system", ["OS-04"]),
     ("Game", ["TP-12"]),
 ]
 
