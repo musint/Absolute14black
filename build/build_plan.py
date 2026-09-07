@@ -25,9 +25,12 @@ PLACE = "Absolute Volleyball Club, San Rafael"
 MAPS = "https://maps.google.com/?q=2145+Francisco+Blvd+E,+San+Rafael,+CA+94901"
 FACTS = [
     ("Who", "Outside hitters and two setters."),
-    ("Attending", "Madi, Sofie, Zara, Kareena, Liva, Nola, Rose, Elia, Devon, Amber, Miah"),
+    ("Attending", "Madi, Sofie, Zara, Nola, Tati, Amber, Kayden, Miah, Devon, Elia, Rose, Kareena, Liva"),
+    ("Group 1", "Madi, Sofie, Zara, Nola, Tati, Amber"),
+    ("Group 2", "Kayden, Miah, Devon, Elia, Rose, Kareena, Liva"),
     ("Coaches", "Christen Hamilton and Song Mu"),
-    ("Focus", "Two tracks, ball control and hitting, with a cross-court game to finish."),
+    ("Focus", "Both tracks run at the same time. Group 1 starts on ball control and Group 2 on hitting, "
+              "then the groups switch. Everyone comes back together for Team OOS and Left v Left."),
 ]
 
 # ----------------------------------------------------------------------------
@@ -155,8 +158,8 @@ DRILLS = {
         "name": "Left v Left (Be Left)",
         "setup": "5v5",
         "how": [
-            "5v5, competitive. Three back-row defenders and a setter in each back row, "
-            "one blocker at left front matched to the cross-court hitter, no middle. Extra players wait off the court on their side.",
+            "5v5, competitive, Group 1 against Group 2. Three back-row defenders and a setter in each back row, "
+            "one blocker at left front matched to the cross-court hitter, no middle. Extra players wait off the court on their side and rotate in.",
             "Coach enters a free ball. That side passes, sets, and the left front hits cross-court. "
             "The other side digs the hard cross, sets, and counters with its own left front cross. Play it out.",
             "Games to 5. Win the game and your side rotates: everyone moves one spot, a waiting player comes in, "
@@ -217,8 +220,8 @@ DRILLS = {
 # (section label, [drill ids])
 PLAN = [
     ("Warmup", ["OS-10"]),
-    ("Track 1: Ball control", ["BC-01", "BC-07", "BC-09", "BC-12"]),
-    ("Track 2: Hitting", ["AT-01", "AT-05"]),
+    ("Track 1: Ball control (Group 1 first, then Group 2)", ["BC-01", "BC-07", "BC-09", "BC-12"]),
+    ("Track 2: Hitting (Group 2 first, then Group 1)", ["AT-01", "AT-05"]),
     ("Out of system", ["OS-04"]),
     ("Game", ["TP-12"]),
 ]
