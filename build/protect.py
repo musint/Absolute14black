@@ -30,11 +30,11 @@ SRC = os.path.join(ROOT, "build", "src")
 ITERATIONS = 250_000
 
 FAVICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E"
-           "%3Crect width='64' height='64' fill='%230a0a0b'/%3E"
-           "%3Ctext x='32' y='47' font-family='Arial Narrow,Arial,sans-serif' font-weight='900' "
-           "font-size='40' fill='white' text-anchor='middle'%3E14%3C/text%3E%3C/svg%3E")
-FONTS = ("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400"
-         "&family=Big+Shoulders+Display:wght@700;900&display=swap")
+           "%3Crect width='64' height='64' rx='14' fill='%23e0357a'/%3E"
+           "%3Ctext x='32' y='45' font-family='Arial,Helvetica,sans-serif' font-weight='800' "
+           "font-size='34' fill='white' text-anchor='middle'%3E14%3C/text%3E%3C/svg%3E")
+FONTS = "https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap"
+THEME = "#fbfbfa"
 
 
 def read_password() -> str:
@@ -96,7 +96,7 @@ def shell(payload_json: str, depth: int) -> str:
 <meta name="robots" content="noindex, nofollow">
 <title>Absolute 14 Black</title>
 <meta name="description" content="Absolute Volleyball Club 14 Black team site. Coach password required.">
-<meta name="theme-color" content="#0a0a0b">
+<meta name="theme-color" content="{THEME}">
 <link rel="icon" href="{FAVICON}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -109,7 +109,7 @@ def shell(payload_json: str, depth: int) -> str:
   <div class="wrap">
     <p class="eyebrow">Absolute Volleyball Club</p>
     <p class="jersey" aria-label="14 Black"><span class="num">14</span><span class="team">Black</span></p>
-    <p class="season"><b>Team site</b> &middot; 2026 to 2027</p>
+    <p class="season"><b>2026 to 2027 season</b> &middot; San Rafael, CA</p>
   </div>
 </header>
 
