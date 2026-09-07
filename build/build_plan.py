@@ -133,7 +133,7 @@ def render_page(plan_html: str, facts_html: str) -> str:
                "%3Crect width='64' height='64' fill='%230a0a0b'/%3E"
                "%3Ctext x='32' y='47' font-family='Arial Narrow,Arial,sans-serif' font-weight='900' "
                "font-size='40' fill='white' text-anchor='middle'%3E14%3C/text%3E%3C/svg%3E")
-    fonts = ("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400"
+    fonts = ("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400"
              "&family=Big+Shoulders+Display:wght@700;900&display=swap")
     return f"""<!doctype html>
 <html lang="en">

@@ -1,6 +1,6 @@
 /* Absolute 14 Black · site styles
    Palette: jersey black on white paper, one accent used sparingly.
-   Type: Big Shoulders Display (jersey numerals, headings) + Atkinson Hyperlegible (body). */
+   Type: Big Shoulders Display (jersey numerals, headings) + Public Sans (body). */
 
 :root {
   --ink: #0a0a0b;
@@ -12,7 +12,7 @@
   --accent: #d81b60;
   --on-ink-muted: #c9c9cc;
   --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
-  --body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --body: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --max: 44rem;
   --pad: clamp(1.1rem, 5vw, 2rem);
   --gutter: 3.9rem;
