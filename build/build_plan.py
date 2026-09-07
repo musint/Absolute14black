@@ -127,8 +127,6 @@ DRILLS = {
         "setup": "Partners and coach toss",
         "ordered": True,
         "how": [
-            "Transition footwork: outsides play off-blocker defense, step-cross hop to the cone, turn, and approach. "
-            "Right sides jump and block, transition behind the cone, and approach. Middles swing block, transition around the far cone, and approach.",
             "Wall rotation: hitting shoulder to the wall, right knee up, elbow back, left arm high. "
             "Rotate forward, elbow high, hand under the ponytail, snap at the top, pull back and repeat.",
             "Kneeling wrist snap: right knee on a line, elbow back, hit the ball straight out of the hand so it comes back "
@@ -144,6 +142,8 @@ DRILLS = {
             "Bicep to the ear, smooth swing, finish with the arm up.",
             "Full approach: timing step down, coach tosses about a 1.5 tempo. Wait for the peak, last two steps urgent. "
             "Rounds: straight on, fingers down, then thumb up to area 1. Everybody hits 4 per variation.",
+            "Transition footwork to finish: outsides play off-blocker defense, step-cross hop to the cone, turn, and approach. "
+            "Right sides jump and block, transition behind the cone, and approach. Middles swing block, transition around the far cone, and approach.",
         ],
         "keys": [
             "Body before arm: hips fire first, torso rotates, the arm comes last. Tighten the core as you swing.",
