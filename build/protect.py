@@ -95,7 +95,7 @@ def shell(payload_json: str, depth: int) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Absolute 14 Black</title>
-<meta name="description" content="Absolute Volleyball Club 14 Black team site. Team password required.">
+<meta name="description" content="Absolute Volleyball Club 14 Black team site. Coach password required.">
 <meta name="theme-color" content="#0a0a0b">
 <link rel="icon" href="{FAVICON}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -115,13 +115,13 @@ def shell(payload_json: str, depth: int) -> str:
 
 <main class="wrap">
   <form class="gate" id="gate" hidden>
-    <h1 class="gate-title">Team access</h1>
-    <p class="gate-help">Enter the team password to continue. Ask a coach if you need it.</p>
+    <h1 class="gate-title">Coaches Access</h1>
+    <p class="gate-help">Enter the coach password to continue.</p>
     <input type="text" name="username" value="team" autocomplete="username" hidden tabindex="-1" aria-hidden="true">
     <label class="gate-label" for="pw">Password</label>
     <input class="gate-input" id="pw" name="password" type="password" autocomplete="current-password" autocapitalize="characters" spellcheck="false" required>
     <button class="btn" type="submit">Enter</button>
-    <p class="gate-msg" id="msg" role="alert" hidden>That password didn't work. Check with a coach and try again.</p>
+    <p class="gate-msg" id="msg" role="alert" hidden>That password didn't work. Try again.</p>
   </form>
   <noscript><p class="gate-help">This site needs JavaScript turned on to unlock.</p></noscript>
 </main>
