@@ -25,9 +25,8 @@ PLACE = "Absolute Volleyball Club, San Rafael"
 MAPS = "https://maps.google.com/?q=2145+Francisco+Blvd+E,+San+Rafael,+CA+94901"
 FACTS = [
     ("Who", "Outside hitters and two setters."),
-    ("Attending", "Madi, Sofie, Zara, Nola, Tati, Amber, Kayden, Miah, Devon, Elia, Rose, Kareena, Liva"),
-    ("Group 1", "Madi, Sofie, Zara, Nola, Tati, Amber"),
-    ("Group 2", "Kayden, Miah, Devon, Elia, Rose, Kareena, Liva"),
+    ("Group 1", "Madi (OH), Sofie (OH), Zara (OH), Nola (OH), Tati (OH), Amber (OH/RS)"),
+    ("Group 2", "Kayden (S/RS), Miah (S/RS), Devon (MB/RS), Elia (MB/RS), Rose (S/RS), Kareena (RS), Liva (RS)"),
     ("Coaches", "Christen Hamilton and Song Mu"),
     ("Focus", "Both tracks run at the same time. Group 1 starts on ball control and Group 2 on hitting, "
               "then the groups switch. Everyone comes back together for Team OOS and Left v Left."),
