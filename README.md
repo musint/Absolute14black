@@ -13,26 +13,34 @@ device until "Sign out" is tapped.
 - `index.html`, `workouts/YYYY-MM-DD.html` : generated shells (committed)
 - `assets/style.css`, `assets/gate.js` : shared styles and the unlock script
 - `build/src/` : plaintext pages (NOT committed)
-- `build/build_plan.py` : generates a workout page into `build/src/workouts/`
+- `build/build_plan.py` : the workout content (facts, drill write-ups, section order) and the generator
 - `build/protect.py` : encrypts everything under `build/src/` into the shells
-- `build/drills-YYYY-MM-DD.json` : drill write-ups from the coaching sheet (NOT committed)
 - `build/.password` : the team password, one line (NOT committed)
 - `build/salt.txt` : key derivation salt, created once (committed, not secret)
 - `robots.txt` and a `noindex` meta on every shell keep search engines out
 
-## Adding a workout
+## Adding or editing a workout
 
-1. Export the drills you need from the Drill Library tab to `build/drills-YYYY-MM-DD.json`
-   (keys: id, name, format, entry, focus, setup, how, variations, keys, source).
-2. Copy the schedule block at the top of `build/build_plan.py`, edit date, blocks, and notes.
-3. Add a session card to `build/src/index.html` under Small Group Workouts.
-4. Run `python build/build_plan.py` then `python build/protect.py`.
-5. Commit the generated shells and push.
+1. In `build/build_plan.py`, set the date and facts, add or edit drills in `DRILLS`
+   (name, setup, `how` steps, `keys`), and set the section order in `PLAN`.
+   For a second workout, copy the file to `build/build_plan_YYYY-MM-DD.py`.
+2. Add or update the session card in `build/src/index.html` under Small Group Workouts.
+3. Run `python build/build_plan.py` then `python build/protect.py`.
+4. Commit the generated shells and push (see below).
+
+Style notes for drill write-ups: short steps, no timings, no scaling or variations
+section, no sources. Coaching keys stay to a handful of lines.
 
 ## Changing the password
 
 Edit `build/.password`, run `python build/protect.py`, commit, push. Everyone will need
 the new password; devices that remembered the old one get the form again.
+
+## Publishing
+
+The repo belongs to the `musint` GitHub account. With the GitHub CLI:
+`gh auth switch -u musint`, `git push origin main`, then switch back. Pages rebuilds
+in about a minute.
 
 ## What the gate is and is not
 
