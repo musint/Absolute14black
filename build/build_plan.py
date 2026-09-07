@@ -25,6 +25,7 @@ PLACE = "Absolute Volleyball Club, San Rafael"
 MAPS = "https://maps.google.com/?q=2145+Francisco+Blvd+E,+San+Rafael,+CA+94901"
 FACTS = [
     ("Who", "Outside hitters and two setters."),
+    ("Attending", "Madi, Sofie, Zara, Kareena, Liva, Nola, Rose, Elia, Devon, Amber, Miah"),
     ("Coaches", "Christen Hamilton and Song Mu"),
     ("Focus", "Two tracks, ball control and hitting, with a cross-court game to finish."),
 ]
@@ -154,15 +155,18 @@ DRILLS = {
         "name": "Left v Left (Be Left)",
         "setup": "5v5",
         "how": [
-            "5v5, group against group. Three back-row defenders and a setter in each back row, "
-            "one blocker at left front matched to the cross-court hitter, no middle.",
+            "5v5, competitive. Three back-row defenders and a setter in each back row, "
+            "one blocker at left front matched to the cross-court hitter, no middle. Extra players wait off the court on their side.",
             "Coach enters a free ball. That side passes, sets, and the left front hits cross-court. "
-            "The other side digs the hard cross, sets, and counters with its own left front cross.",
-            "Make-it-take-it, 3-point games, best of three. Mirror as right v right if time.",
+            "The other side digs the hard cross, sets, and counters with its own left front cross. Play it out.",
+            "Games to 5. Win the game and your side rotates: everyone moves one spot, a waiting player comes in, "
+            "and a new hitter is at left front. Lose and your side stays put.",
+            "To win the drill, a side has to rotate all the way through its players. First side to complete the full rotation wins.",
         ],
         "keys": [
             "Hitters hunt the hard cross and beat the single block over or around.",
             "Diggers sit deep cross. The swing geometry makes the seam and angle predictable.",
+            "Every game counts. The side that stays put has to earn its way out.",
             "Keep swings controlled at this age. Soften the entry if pace runs high.",
         ],
     },
