@@ -1,0 +1,4 @@
+build/src/
+build/.password
+build/drills-*.json
+__pycache__/

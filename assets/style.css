@@ -151,6 +151,23 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; justify-conte
 }
 .hint { font-size: 0.85rem; color: var(--muted); margin: 0.2rem 0 0; }
 
+/* ---------- Password gate ---------- */
+.gate { display: grid; gap: 0.6rem; max-width: 26rem; padding: 1.8rem 0 1rem; }
+.gate-title {
+  font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: 0.06em;
+  font-size: 1.6rem; margin: 0; line-height: 1;
+}
+.gate-help { color: var(--muted); margin: 0 0 0.4rem; }
+.gate-label { font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); }
+.gate-input {
+  font: inherit; font-size: 1.35rem; letter-spacing: 0.12em; padding: 0.65rem 0.8rem; width: 100%;
+  border: 2px solid var(--ink); border-radius: 0; background: #fff; color: var(--ink);
+}
+.gate-input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.gate .btn { justify-self: start; margin-top: 0.2rem; }
+.gate.busy .btn { opacity: 0.55; pointer-events: none; }
+.gate-msg { color: var(--accent); font-weight: 700; margin: 0; }
+
 @media (max-width: 480px) {
   .dbody { padding-left: 0; }
   .coaches li { flex-direction: column; align-items: flex-start; gap: 0.2rem; }

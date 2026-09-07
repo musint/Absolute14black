@@ -1,8 +1,10 @@
 """Generate a practice plan page for the Absolute 14 Black site.
 
-Usage: python build/build_plan.py
+Usage: python build/build_plan.py, then python build/protect.py
 Reads build/drills-<DATE>.json (exported from the coaching sheet's Drill Library)
-and writes workouts/<DATE>.html. Public page: no player names, no contact details.
+and writes the plaintext page to build/src/workouts/<DATE>.html. protect.py then
+wraps it in the password gate at workouts/<DATE>.html. Plaintext sources are not
+committed. Even behind the gate: no player names, no contact details.
 """
 from __future__ import annotations
 
@@ -179,7 +181,7 @@ def render_page(plan_html: str, facts_html: str) -> str:
 <footer>
   <div class="wrap">
     <span>Absolute Volleyball Club &middot; <a href="{MAPS}">2145 Francisco Blvd E, San Rafael, CA 94901</a></span>
-    <span><a href="../">Absolute 14 Black</a> &middot; 2026 to 2027</span>
+    <span><a href="../">Absolute 14 Black</a> &middot; 2026 to 2027 &middot; <a href="#" data-lock>Sign out</a></span>
   </div>
 </footer>
 
@@ -208,7 +210,7 @@ def build() -> str:
 
 if __name__ == "__main__":
     page = build()
-    dest = os.path.join(ROOT, "workouts", f"{DATE}.html")
+    dest = os.path.join(ROOT, "build", "src", "workouts", f"{DATE}.html")
     os.makedirs(os.path.dirname(dest), exist_ok=True)
     with open(dest, "w", encoding="utf-8", newline="\n") as f:
         f.write(page)
